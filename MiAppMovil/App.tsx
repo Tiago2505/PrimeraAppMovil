@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import CustomButton from './src/components/CustomButton';
 
 export default function App() {
   return (
@@ -7,6 +8,8 @@ export default function App() {
       <Text>Primera aplicacion</Text>
       <Text>By: Dany Paz</Text>
       <StatusBar style="auto" />
+
+      <CustomButton title='Prueba' onPressButton={()=>console.log('prueba')} />
     </View>
   );
 }
